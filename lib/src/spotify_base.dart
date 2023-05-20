@@ -159,7 +159,7 @@ abstract class SpotifyApiBase {
   }
 
   Future<String> _get(String path) {
-    return _getImpl('$_baseUrl/$path', const {});
+    return _getImpl('$_baseUrl/$path', const {'Accept-Language': 'ja'});
   }
 
   Future<String> _post(String path, [String body = '']) {
